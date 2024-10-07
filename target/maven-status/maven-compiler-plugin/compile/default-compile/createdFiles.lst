@@ -1,3 +1,4 @@
 org/spring/boot/MySpringBootApplication.class
+org/spring/controller/HelloController.class
 org/spring/boot/MySpringBootRouter.class
 org/spring/boot/MySpringBean.class
