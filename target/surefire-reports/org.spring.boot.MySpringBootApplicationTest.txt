@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.spring.boot.MySpringBootApplicationTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.873 s - in org.spring.boot.MySpringBootApplicationTest
