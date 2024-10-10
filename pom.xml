@@ -65,6 +65,31 @@
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
 
+    <!-- crud -->
+
+    <!-- MySQLコネクタ -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.27</version>
+        <scope>runtime</scope>
+    </dependency>
+
+    <!-- MyBatis Starter -->
+    <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <version>3.0.3</version>
+    </dependency>
+    
+    <!-- Lombok -->
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.8</version>
+        <scope>provided</scope>
+    </dependency>
+
     <!-- Camel -->
     <dependency>
       <groupId>org.apache.camel.springboot</groupId>
