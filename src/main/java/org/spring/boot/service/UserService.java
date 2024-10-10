@@ -14,7 +14,7 @@ public class UserService {
     public UserService(UserMapper userMapper) {
         this.userMapper = userMapper;
     }
-    
+
     public List<User> findAll() {
         return userMapper.findAll();
     }
@@ -33,5 +33,9 @@ public class UserService {
 
     public void delete(int id) {
         userMapper.delete(id);
+    }
+
+    public List<User> findSearch(String string) {
+        return userMapper.findSearch(string);
     }
 }

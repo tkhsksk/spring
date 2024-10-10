@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.servlet.ModelAndView;
 
 import org.spring.boot.form.UserForm;
+import org.spring.boot.form.UserSearchForm;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -51,5 +52,13 @@ public class UserController {
       userService.update(user);
       // 新規登録フォームにリダイレクト
       return "redirect:/user";
+   }
+
+   // userの検索フォーム
+   @RequestMapping(value="/user/search")
+   private String userSearch(Model model, @RequestParam(required = false, name="word") String word) {
+      model.addAttribute("userSearchList", userService.findSearch(word));
+      model.addAttribute("userSearchForm", new UserSearchForm());
+      return "user/search";
    }
 }

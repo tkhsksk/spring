@@ -23,4 +23,7 @@ public interface UserMapper {
 
     @Delete("DELETE FROM user WHERE id=#{id}")
     void delete(int id);
+
+    @Select("SELECT * FROM user WHERE name LIKE CONCAT('%', #{string}, '%')")
+    List<User> findSearch(String string);
 }
